@@ -14,7 +14,6 @@ namespace HashTableBinaryTreee
                 public v Value { get; set; }
             }
             private readonly int size;
-            //int[] arr;
             private readonly LinkedList<KeyValue<K, V>>[] items;
 
             public MyMapNode(int size)
@@ -105,7 +104,7 @@ namespace HashTableBinaryTreee
 
             protected LinkedList<KeyValue<K, V>> GetLinkedList(int position)
             {
-                LinkedList<KeyValue<K, V>> linkedList = items[position]; //0
+                LinkedList<KeyValue<K, V>> linkedList = items[position]; 
                 if (linkedList == null)
                 {
                     linkedList = new LinkedList<KeyValue<K, V>>();
