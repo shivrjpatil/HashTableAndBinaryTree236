@@ -30,7 +30,13 @@ namespace HashTableBinaryTreee
                 else
                     hashTabe.Add(word.ToLower(), 1); 
             }
+            Console.WriteLine("Displaying after add operation");
             hashTabe.Display();
+            string s = "avoidable";
+            hashTabe.Remove(s);
+            Console.WriteLine("After removed an item {0}", s);
+            hashTabe.Display();
+
 
         }
     }
